@@ -1,0 +1,46 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+/* LOGO */
+
+.logo {
+    text-align: center;
+    margin: 20px 0 10px;
+
+    img {
+        width: 170px;
+    }
+}
+
+/* LOCATION */
+
+.location {
+    height: 40px;
+    background-color: #f3f3f3;
+    box-shadow: inset 0px 20px 7px -20px #B8B8B8;
+
+    .locationBar {
+        justify-content: center;
+        padding: 12px;
+    
+        .containerLocation {
+            margin-right: 15px;
+            align-items: center;
+
+            .searchText {
+                background: transparent;
+            }
+        }
+    }
+}
