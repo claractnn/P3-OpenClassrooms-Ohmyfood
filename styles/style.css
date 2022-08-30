@@ -1,19 +1,4 @@
-* {
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0px;
-}
-
+@charset "UTF-8";
 /* LOGO */
 .logo {
   text-align: center;
@@ -27,7 +12,7 @@ body {
 /* LOCATION */
 .location {
   height: 40px;
-  background-color: #f3f3f3;
+  background-color: #E3E3E3;
   -webkit-box-shadow: inset 0px 20px 7px -20px #B8B8B8;
           box-shadow: inset 0px 20px 7px -20px #B8B8B8;
 }
@@ -46,7 +31,131 @@ body {
           align-items: center;
 }
 
-.location .locationBar .containerLocation .searchText {
+.searchText {
   background: transparent;
+  border: none;
+  color: black;
+}
+
+/* RÉSERVATION */
+.reservation {
+  background-color: #F3F3F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 20px 30px 40px;
+}
+
+.reservation p {
+  font-weight: 200;
+  margin: 0 5px 30px;
+}
+
+h1 {
+  margin: 20px 40px 10px;
+}
+
+/* BOUTONS DÉGRADÉ ROSE/VIOLET */
+.btn {
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+  padding: 15px 20px 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 6px #7f7f7f;
+          box-shadow: 0 0 6px #7f7f7f;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 3px 2px 6px #7f7f7f;
+          box-shadow: 3px 2px 6px #7f7f7f;
+}
+
+/*  PRESENTATION */
+.presentationList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentationItem {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 10px #7f7f7f;
+          box-shadow: 0 0 10px #7f7f7f;
+  border: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 80px 10px;
+}
+
+.presentationItem ul {
+  padding: 0;
+}
+
+.ol li {
+  position: relative;
+  counter-increment: steps;
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+}
+
+/* COMPTEUR - PRESENTATION */
+.presentationList {
+  counter-set: presentation-counter;
+}
+
+li::after {
+  content: counter(presentation-counter);
 }
 /*# sourceMappingURL=style.css.map */
