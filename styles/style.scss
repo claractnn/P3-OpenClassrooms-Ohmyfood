@@ -1,7 +1,8 @@
-@import "_layout/header";
 @import "_composants/buttons";
+@import "_layout/header";
 @import "_layout/presentation.scss";
-@import "base/configuration.scss";
+@import "_base/configuration";
+@import "_layout/homecards";
 
 
 

@@ -150,12 +150,4 @@ body {
   margin: 0px;
 }
 
-/* COMPTEUR - PRESENTATION */
-.presentationList {
-  counter-set: presentation-counter;
-}
-
-li::after {
-  content: counter(presentation-counter);
-}
 /*# sourceMappingURL=style.css.map */
