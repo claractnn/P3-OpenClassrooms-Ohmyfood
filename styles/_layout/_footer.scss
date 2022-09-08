@@ -1,20 +1,39 @@
 /* LOGO */
 
-.logo {
-    text-align: center;
-    margin: 20px 0 10px;
-
-    img {
-        width: 170px;
-    }
+.footer {
+    flex-direction: column;
+    background-color: #363636;
+    padding-bottom: 15px;
 }
 
+.logo-footer {
+    text-align: center;
+    align-items: center;
+    width: 90%;
+    margin: 20px;
+    color: white;
+}
+
+
+
 .footerList {
-    display: flex;
     flex-direction: column;
 
     li {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        padding: 0px;
+    
+        p {
+            color: white;
+            margin: 5px 0 5px;
+        }
     }
+    
 }
+
+.fa-footer {
+    color: white;
+    padding: 0px 10px 0 0;
+} 

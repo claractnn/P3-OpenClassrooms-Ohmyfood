@@ -3,7 +3,8 @@
 .restaurants {
     flex-direction: column;
     background-color: #f3f3f3;
-    height: 1300px;
+    margin-top: 40px;
+    padding-bottom: 50px;
 }
 
 .containerRestaurants {
@@ -27,6 +28,11 @@
     }
 }
 
+.cardRestaurant:hover {
+    box-shadow: 2px 6px 8px 4px #e7e7e7;
+    cursor: pointer;
+}
+
 .cardRestaurantDescriptionText {
     display: flex;
     flex-direction: column;
@@ -46,4 +52,19 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 15px 15px 15px;
+}
+
+.cardRestaurantIcon i {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.fav-empty {
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.fa-heart:hover {
+    background-color: linear-gradient(#FF79DA, #9356DC);
 }
