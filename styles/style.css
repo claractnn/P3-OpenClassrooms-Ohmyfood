@@ -80,6 +80,7 @@
   filter: brightness(50%);
 }
 
+/* FOOTER */
 .footerList {
   flex-direction: column;
 }
@@ -99,13 +100,18 @@
   padding: 0px 10px 0 0;
 }
 
+@media (min-width: 768px) {
+  /* FOOTER TABLET*/
+  .footerList {
+    display: flex;
+    flex-direction: row;
+  }
+}
 /*  PRESENTATION */
 .presentationList {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  height: 250px;
 }
 
 .presentationItem {
@@ -118,6 +124,8 @@
   width: 90%;
   height: 70px;
   justify-content: flex-start;
+  margin: 10px 0 10px;
+  padding-right: 8px;
 }
 
 .presentationItem:hover {
@@ -144,6 +152,16 @@ li i:hover {
   color: #9356DC;
 }
 
+@media (min-width: 768px) {
+  /* HEADER TABLET */
+  .presentationList {
+    display: flex;
+    flex-direction: row;
+  }
+  .presentationList .presentationItem {
+    margin: 0 20px 0 0;
+  }
+}
 /* CONFIGURATION */
 .flex {
   display: flex;
@@ -168,6 +186,7 @@ h2 {
 .containerRestaurants {
   flex-direction: column;
   gap: 30px;
+  margin: 0 20px 0;
 }
 
 .cardRestaurant {
@@ -175,9 +194,7 @@ h2 {
   justify-content: space-between;
   background-color: white;
   border-radius: 25px;
-  width: 90%;
   overflow: hidden;
-  margin: 0 20px 0;
 }
 .cardRestaurant img {
   -o-object-fit: cover;
@@ -226,6 +243,15 @@ h2 {
   background-color: linear-gradient(#FF79DA, #9356DC);
 }
 
+@media (min-width: 768px) {
+  .containerRestaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cardRestaurant {
+    width: 47%;
+  }
+}
 /* TYPOGRAPHY */
 * {
   text-decoration: none;

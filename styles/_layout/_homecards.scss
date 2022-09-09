@@ -10,6 +10,7 @@
 .containerRestaurants {
     flex-direction: column;
     gap: 30px;
+    margin: 0 20px 0;
 }
 
 .cardRestaurant {
@@ -17,9 +18,7 @@
     justify-content: space-between;
     background-color: white;
     border-radius: 25px;
-    width: 90%;
     overflow: hidden;
-    margin: 0 20px 0;
 
     img {
         object-fit: cover;
@@ -67,4 +66,16 @@
 
 .fa-heart:hover {
     background-color: linear-gradient(#FF79DA, #9356DC);
+}
+
+@media (min-width: 768px) {
+
+    .containerRestaurants {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cardRestaurant {
+        width: 47%;
+    }
 }
