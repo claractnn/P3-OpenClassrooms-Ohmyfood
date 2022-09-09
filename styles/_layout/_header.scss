@@ -1,11 +1,13 @@
 /* LOGO */
 
 .logo {
+    display: flex;
     text-align: center;
+    justify-content: center;
     margin: 20px 0 10px;
 
     img {
-        width: 170px;
+        width: 180px;
     }
 }
 
