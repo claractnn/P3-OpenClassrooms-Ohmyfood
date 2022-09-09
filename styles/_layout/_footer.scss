@@ -34,7 +34,6 @@
             margin: 5px 0 5px;
         }
     }
-    
 }
 
 .fa-footer {
@@ -46,9 +45,25 @@
 
     /* FOOTER TABLET*/
 
-    .footerList {
-        display: flex;
+    .footer {
+        flex-wrap: wrap;
         flex-direction: row;
+        justify-items: center;
+        padding-top: 20px;
+
+    .logo-footer {
+        margin: 0;
+    }
+       
+        .footerList ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            li {
+                margin-right: 30px;
+            }
+        }
     }
 }
     

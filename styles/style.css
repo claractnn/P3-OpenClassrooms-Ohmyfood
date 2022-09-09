@@ -102,9 +102,22 @@
 
 @media (min-width: 768px) {
   /* FOOTER TABLET*/
-  .footerList {
+  .footer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    padding-top: 20px;
+  }
+  .footer .logo-footer {
+    margin: 0;
+  }
+  .footer .footerList ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer .footerList ul li {
+    margin-right: 30px;
   }
 }
 /*  PRESENTATION */
