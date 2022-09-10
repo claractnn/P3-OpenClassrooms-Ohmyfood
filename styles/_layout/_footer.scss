@@ -4,17 +4,16 @@
     flex-direction: column;
     background-color: #363636;
     padding-bottom: 15px;
+    padding-top: 20px;
 }
 
 .logo-footer {
-    text-align: center;
-    width: 130px;
+    font-family: 'Shrikhand', cursive;
+    font-size: large;
+    color: white;
     margin: 20px 10px 0;
     padding-left: 30px;
-
-    img {
-    filter: brightness(50%);
-    }
+    align-items: center;
 }
 
 
@@ -49,7 +48,6 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-items: center;
-        padding-top: 20px;
 
     .logo-footer {
         margin: 0;
