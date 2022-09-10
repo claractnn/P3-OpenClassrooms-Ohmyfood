@@ -141,10 +141,12 @@
   margin: 10px 0 10px;
   padding-right: 8px;
 }
-
 .presentationItem:hover {
   background-color: rgba(174, 143, 212, 0.3725490196);
   cursor: pointer;
+}
+.presentationItem:hover i {
+  color: #9356DC;
 }
 
 .numberIcon {
@@ -160,10 +162,6 @@
 li i {
   padding: 0 25px 0;
   color: #b3b3b3;
-}
-
-li i:hover {
-  color: #9356DC;
 }
 
 @media (min-width: 768px) {
@@ -209,6 +207,7 @@ h2 {
 }
 
 .cardRestaurant {
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
@@ -222,15 +221,14 @@ h2 {
   width: 100%;
   height: 150px;
 }
-
-.cardBadge {
+.cardRestaurant .cardBadge {
   position: absolute;
-  font-weight: 400;
   background-color: #99E2D0;
   color: #1b6150;
   padding: 8px;
   border-radius: 3px;
-  margin-top: 1rem;
+  top: 10px;
+  right: 20px;
 }
 
 .cardRestaurant:hover {
@@ -262,16 +260,9 @@ h2 {
   display: flex;
   align-items: center;
   padding-top: 12px;
-  mix-blend-mode: lighten;
-  border: 1px solid black;
 }
 
-.fav-empty {
-  border: 2px solid transparent;
-  cursor: pointer;
-}
-
-.fa-heart:hover {
+.fa-heart {
   background-color: linear-gradient(#FF79DA, #9356DC);
 }
 

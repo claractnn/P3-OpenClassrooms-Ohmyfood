@@ -18,11 +18,14 @@
     justify-content: flex-start;
     margin: 10px 0 10px;
     padding-right: 8px;
-}
 
-.presentationItem:hover {
-    background-color: #ae8fd45f;
-    cursor: pointer;
+    &:hover {
+        background-color: #ae8fd45f;
+        cursor: pointer;
+        i {
+            color: #9356DC;
+        }
+    }
 }
 
 .numberIcon {
@@ -40,9 +43,6 @@ li i {
     color: #b3b3b3;
 }
 
-li i:hover {
-    color: #9356DC;
-}
 
 @media (min-width: 768px) {
 
