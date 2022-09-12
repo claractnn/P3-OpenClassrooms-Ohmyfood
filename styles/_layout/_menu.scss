@@ -17,15 +17,48 @@
     justify-content: space-between;
     align-items: center;
     margin: 10px;
+
+    h1 {
+        font-family: 'Shrikhand', cursive;
+    }
 }
 
 /* CONTAINER MENUS */
 
 .containerMenus {
     flex-direction: column;
+    gap: 15px;
 
     .menuTitle {
         font-weight: 300;
+        margin-top: 50px;
+    }
+}
+
+.menuCard {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px 8px 10px;
+    box-shadow: 2px 4px 10px 4px #e4e4e4;
+    margin: 0 10px 0;
+
+    .menuDescription {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .menuDescriptionText {
+        flex-direction: column;
+
+        h3 {
+            margin: 5px;
+            font-weight: 500;
+        }
+        
+        p {
+            margin: 2px 5px 5px;
+            font-weight: 300;
+        }
     }
 }
 

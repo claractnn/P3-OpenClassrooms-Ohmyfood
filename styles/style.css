@@ -306,11 +306,39 @@ body {
   align-items: center;
   margin: 10px;
 }
+.headerMenu h1 {
+  font-family: "Shrikhand", cursive;
+}
 
 /* CONTAINER MENUS */
 .containerMenus {
   flex-direction: column;
+  gap: 15px;
 }
 .containerMenus .menuTitle {
+  font-weight: 300;
+  margin-top: 50px;
+}
+
+.menuCard {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px 8px 10px;
+  box-shadow: 2px 4px 10px 4px #e4e4e4;
+  margin: 0 10px 0;
+}
+.menuCard .menuDescription {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menuCard .menuDescriptionText {
+  flex-direction: column;
+}
+.menuCard .menuDescriptionText h3 {
+  margin: 5px;
+  font-weight: 500;
+}
+.menuCard .menuDescriptionText p {
+  margin: 2px 5px 5px;
   font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
