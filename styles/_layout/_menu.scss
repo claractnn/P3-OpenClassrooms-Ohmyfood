@@ -1,0 +1,38 @@
+/* MENU */ 
+
+.containerMenu {
+    width: 100%;
+    background-color: #f3f3f3;
+    flex-direction: column;
+}
+
+/* HEADER MENU */
+
+.header-menu-img img {
+    width: 100%;
+}
+
+.headerMenu {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+/* CONTAINER MENUS */
+
+.containerMenus {
+    flex-direction: column;
+
+    .menuTitle {
+        font-weight: 300;
+    }
+}
+
+
+
+
+
+
+
+
