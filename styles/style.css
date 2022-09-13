@@ -254,16 +254,17 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   margin: 15px 15px 15px;
+  position: relative;
 }
 
-.cardRestaurantIcon i {
-  display: flex;
-  align-items: center;
-  padding-top: 12px;
+.cardRestaurantIcon .restaurantLike {
+  position: absolute;
+  font-size: x-large;
+  top: 20%;
+  right: 2%;
 }
-
-.fa-heart {
-  background-color: linear-gradient(#FF79DA, #9356DC);
+.cardRestaurantIcon .fas {
+  color: linear-gradient(#FF79DA, #9356DC);
 }
 
 @media (min-width: 768px) {
