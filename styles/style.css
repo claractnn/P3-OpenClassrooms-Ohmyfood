@@ -264,7 +264,15 @@ h2 {
   right: 2%;
 }
 .cardRestaurantIcon .fas {
-  color: linear-gradient(#FF79DA, #9356DC);
+  font-weight: 200;
+}
+.cardRestaurantIcon .fas:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: 0.7s;
+  font-weight: 900;
 }
 
 @media (min-width: 768px) {
