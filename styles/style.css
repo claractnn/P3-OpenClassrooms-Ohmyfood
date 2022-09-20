@@ -264,7 +264,7 @@ h2 {
   right: 2%;
 }
 .cardRestaurantIcon .fas {
-  font-weight: 200;
+  font-weight: 100;
 }
 .cardRestaurantIcon .fas:hover {
   background-clip: text;
@@ -302,6 +302,10 @@ body {
   width: 100%;
   background-color: #f3f3f3;
   flex-direction: column;
+  padding: 10px;
+  position: relative;
+  bottom: 60px;
+  border-radius: 50px;
 }
 
 /* HEADER MENU */
@@ -323,10 +327,12 @@ body {
 .containerMenus {
   flex-direction: column;
   gap: 15px;
+  margin: 10px;
 }
 .containerMenus .menuTitle {
-  font-weight: 300;
-  margin-top: 50px;
+  font-weight: 200;
+  margin: 30px 0 5px 0;
+  font-size: 1.1em;
 }
 
 .menuCard {
@@ -334,7 +340,7 @@ body {
   border-radius: 15px;
   padding: 10px 8px 10px;
   box-shadow: 2px 4px 10px 4px #e4e4e4;
-  margin: 0 10px 0;
+  margin: 0;
 }
 .menuCard .menuDescription {
   flex-direction: row;
