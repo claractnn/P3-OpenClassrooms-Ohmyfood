@@ -311,7 +311,7 @@ body {
   padding: 10px;
   position: relative;
   bottom: 60px;
-  border-radius: 50px;
+  border-radius: 60px 60px 0 0;
 }
 
 /* HEADER MENU */
@@ -328,6 +328,9 @@ body {
 .headerMenu h1 {
   font-family: "Shrikhand", cursive;
 }
+.headerMenu .restaurantLike {
+  right: 10%;
+}
 
 /* CONTAINER MENUS */
 .containerMenus {
@@ -336,9 +339,19 @@ body {
   margin: 10px;
 }
 .containerMenus .menuTitle {
-  font-weight: 200;
+  font-weight: 300;
   margin: 30px 0 5px 0;
   font-size: 1.1em;
+  position: relative;
+}
+.containerMenus .menuTitle:after {
+  content: "";
+  width: 45px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: -30%;
 }
 
 .menuCard {
