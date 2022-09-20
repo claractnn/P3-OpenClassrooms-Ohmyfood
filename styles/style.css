@@ -18,6 +18,25 @@
   box-shadow: 3px 2px 6px #7f7f7f;
 }
 
+/* COEURS AVEC TRANSITIONS DÉGRADÉ */
+.restaurantLike {
+  position: absolute;
+  font-size: x-large;
+}
+
+.fas {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: 0.5s;
+  font-weight: 900;
+  opacity: 0%;
+}
+.fas:hover {
+  opacity: 100%;
+}
+
 /* LOGO */
 .logo {
   display: flex;
@@ -258,21 +277,8 @@ h2 {
 }
 
 .cardRestaurantIcon .restaurantLike {
-  position: absolute;
-  font-size: x-large;
   top: 20%;
   right: 2%;
-}
-.cardRestaurantIcon .fas {
-  font-weight: 100;
-}
-.cardRestaurantIcon .fas:hover {
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: 0.7s;
-  font-weight: 900;
 }
 
 @media (min-width: 768px) {

@@ -17,3 +17,23 @@
         box-shadow: 3px 2px 6px #7f7f7f;
     }
 }
+
+/* COEURS AVEC TRANSITIONS DÉGRADÉ */
+.restaurantLike { 
+        position: absolute; 
+        font-size: x-large;
+    }
+
+    .fas {
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient(#FF79DA, #9356DC);
+        transition: 0.5s;
+        font-weight: 900;  
+        opacity: 0%;   
+
+        &:hover {
+            opacity: 100%;
+        }
+    } 

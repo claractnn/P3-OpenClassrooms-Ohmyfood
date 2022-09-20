@@ -68,23 +68,8 @@
 
 .cardRestaurantIcon {
     .restaurantLike {
-        position: absolute; 
-        font-size: x-large;
         top: 20%;
         right: 2%; 
-    }
-
-    .fas {
-        font-weight: 100;
-
-        &:hover {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(#FF79DA, #9356DC);
-            transition: 0.7s;
-            font-weight: 900;     
-        } 
     }
 }
 
