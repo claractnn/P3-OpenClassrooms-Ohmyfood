@@ -12,10 +12,17 @@
   color: white;
   font-weight: 500;
   cursor: pointer;
-  transition: 0.3s;
+  opacity: 1;
 }
 .btn:hover {
+  transition: 0.5s;
   box-shadow: 3px 2px 6px #7f7f7f;
+  opacity: 0.95;
+}
+
+.btn--menu {
+  width: 150px;
+  margin: 50px 0 50px;
 }
 
 /* COEURS AVEC TRANSITIONS DÉGRADÉ */
@@ -43,6 +50,9 @@
   text-align: center;
   justify-content: center;
   margin: 20px 0 10px;
+}
+.logo:hover {
+  cursor: pointer;
 }
 .logo img {
   width: 180px;
@@ -362,6 +372,9 @@ body {
   margin: 0;
   -webkit-animation: 1s ease-out both itemAppear;
           animation: 1s ease-out both itemAppear;
+}
+.menuCard:hover {
+  cursor: pointer;
 }
 .menuCard .menuDescription {
   flex-direction: row;
