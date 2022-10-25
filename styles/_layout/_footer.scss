@@ -4,7 +4,7 @@
     flex-direction: column;
     background-color: #363636;
     padding-bottom: 15px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .logo-footer {
@@ -16,8 +16,12 @@
     align-items: center;
 }
 
-
 /* FOOTER */ 
+
+.footer-menu {
+    position: relative;
+    bottom: 60px;
+}
 
 .footerList {
     flex-direction: column;

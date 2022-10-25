@@ -67,6 +67,15 @@
         cursor: pointer;
     }
 
+    .menuTextPrice {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            font-weight: 500;
+        }
+    }
+
     .menuDescription {
         flex-direction: row;
         justify-content: space-between;

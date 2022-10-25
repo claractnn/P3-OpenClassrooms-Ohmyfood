@@ -4,7 +4,7 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 20px 0 10px;
+    margin: 20px 0 20px;
     &:hover {
         cursor: pointer;
     }
@@ -13,6 +13,19 @@
         width: 180px;
     }
 }
+
+.header-menu {
+    justify-content: center;
+    align-items: center;
+    .fa-arrow-left {
+        font-size: x-large;
+        align-items: left;
+        position: relative;
+        right: 80px;
+    }
+}
+
+
 
 /* LOCATION */
 

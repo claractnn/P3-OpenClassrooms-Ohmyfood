@@ -20,8 +20,13 @@
     <div id="main">
         <!-- HEADER -->
         <header>
-            <div class="logo" href="accueil.html">
-                <img src="images/logo/ohmyfood.png" alt="Ohmyfood">
+            <div class="header-menu flex">
+                <a href="accueil.html">
+                <i class="fas fa-arrow-left flex"></i>
+                </a>
+                <div class="logo">
+                    <img src="images/logo/ohmyfood.png" alt="Ohmyfood">
+                </div>
             </div>
             <div class="header-menu-img">
                 <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
@@ -44,12 +49,12 @@
                     <div class="menuDescription flex">
                         <div class="menuDescriptionText flex">
                             <h3>Tartare de poulpe acidulé</h3>
-                            <p>Aux zestes d'orange</p>
+                                <div class="menuTextPrice flex">
+                                    <p>Aux zestes d'orange</p>
+                                    <span>25€</span>
+                                </div>
                         </div>
                         <div class="menuDescriptionPriceIcon">
-                            <div class="menuPrice">
-                                <span>25€</span>
-                            </div>
                             <div class="menuIcon">
                                 <i class="fa-solid fas fa-circle-check"></i>
                             </div>
@@ -204,16 +209,13 @@
                 </div>
             </div>
 
-            <div>
             <button class="btn" type="button">Commander</button>
-            </div>  
-            
         </section>
 
 
 
         <!-- FOOTER -->
-        <footer class="footer flex">
+        <footer class="footer footer-menu flex">
             <span class="logo-footer flex">ohmyfood</span>
 
                 <div class="footerList flex">
