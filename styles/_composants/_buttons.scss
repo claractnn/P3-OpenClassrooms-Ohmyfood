@@ -11,8 +11,9 @@
     font-size: 15px;
     color: white;
     font-weight: 500;
-    cursor: pointer;
     opacity: 1;
+    cursor: pointer;
+
     &:hover {
         transition: 0.5s;
         box-shadow: 3px 2px 6px #7f7f7f;
@@ -25,6 +26,7 @@
 .restaurantLike { 
         position: absolute; 
         font-size: x-large;
+        cursor: pointer;
     }
 
     .heart-color {
