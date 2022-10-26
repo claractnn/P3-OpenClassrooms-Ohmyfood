@@ -1,6 +1,6 @@
 /* MENU */ 
 
-.containerMenu {
+.containerMenus {
     width: 100%;
     background-color: #f3f3f3;
     flex-direction: column;
@@ -33,7 +33,7 @@
 
 /* CONTAINER MENUS */
 
-.containerMenus {
+.containerMenu {
     flex-direction: column;
     gap: 15px;
     margin: 10px;
@@ -56,64 +56,85 @@
     }
 }
 
-.container-menu {
+.menu {
     flex-direction: column;
     gap: 15px;
 }
 
-
 .menuCard {
     background-color: white;
     border-radius: 15px;
-    padding: 10px 8px 10px;
     box-shadow: 2px 4px 10px 4px #e4e4e4;
     margin: 0;
+    padding: 15px;
     animation: 1s ease-out both itemAppear;
-    &:hover {
+    overflow: hidden;
+    &:hover .menuCard-confirmation {
         cursor: pointer;
+        margin-right: -1rem;
     }
-
-    .menuTextPrice {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        span {
-            font-weight: 500;
-        }
+    &:hover .menuCard-icon {
+        transform: rotate(0);
     }
+}
 
-    .menuDescription {
-        flex-direction: row;
-        justify-content: space-between;
+.menuCard-description {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    h3 {
+        font-weight: 500;
     }
     
-    .menuDescriptionText {
-        flex-direction: column;
-
-        h3 {
-            margin: 5px;
-            font-weight: 500;
-        }
-        
-        p {
-            margin: 2px 5px 5px;
-            font-weight: 300;
-        }
+    p {
+        font-weight: 300;
+        padding-top: 5px;
     }
+}
+
+.menuCard-price {
+    flex-direction: row;
+    font-weight: 500;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.menuCard-confirmation {
+    background-color: $color-tertiary;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+}
+    
+.menuCard-icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #FFF;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    transform: rotate(180deg);
+    transition-duration: .5s;
+}
+
+.menuIcon {
+    color: $color-tertiary;
 }
 
 @media (min-width: 970px) {
 
-    /* CONTAINER MENUS */
-
-    .container-menu {
+    .containerMenu {
         flex-direction: row;
-        gap: 10px;
-
-        .menuCard {
-            width: 33%;
-        }
+        gap: 40px;
     }
+
+    .menu {
+        width: 32%;
+    }
+
 }
 
 
