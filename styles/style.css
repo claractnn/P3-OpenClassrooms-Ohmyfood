@@ -63,7 +63,7 @@
   font-size: x-large;
   align-items: left;
   position: relative;
-  right: 80px;
+  right: 90%;
 }
 
 /* LOCATION */
@@ -85,6 +85,7 @@
   background: transparent;
   border: none;
   color: black;
+  max-width: 125px;
 }
 
 /* RÉSERVATION */
@@ -182,7 +183,7 @@
   height: 70px;
   justify-content: flex-start;
   margin: 10px 0 10px;
-  padding-right: 8px;
+  padding-right: 20px;
 }
 .presentationItem:hover {
   background-color: rgba(174, 143, 212, 0.3725490196);
@@ -400,23 +401,24 @@ body {
   box-shadow: 2px 4px 10px 4px #e4e4e4;
   margin: 0;
   padding: 15px;
+  cursor: pointer;
   -webkit-animation: 1s ease-out both itemAppear;
           animation: 1s ease-out both itemAppear;
   overflow: hidden;
+  max-width: 100%;
 }
 .menuCard:hover .menuCard-confirmation {
-  cursor: pointer;
   margin-right: -1rem;
 }
 .menuCard:hover .menuCard-icon {
   transform: rotate(0);
 }
-
 .menuCard-description {
   flex: 1;
+  width: 150px;
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
-  text-overflow: ellipsis "...";
 }
 .menuCard-description h3 {
   font-weight: 500;
@@ -425,14 +427,12 @@ body {
   font-weight: 300;
   padding-top: 5px;
 }
-
 .menuCard-price {
   flex-direction: row;
   font-weight: 500;
   justify-content: flex-end;
   align-items: flex-end;
 }
-
 .menuCard-confirmation {
   background-color: #99E2D0;
   margin: -1rem -5rem -1rem 1rem;
@@ -441,7 +441,6 @@ body {
   justify-content: center;
   transition-duration: 1s;
 }
-
 .menuCard-icon {
   height: 1.6rem;
   width: 1.6rem;
@@ -452,8 +451,7 @@ body {
   transform: rotate(250deg);
   transition-duration: 1s;
 }
-
-.menuIcon {
+.menuCard .menuIcon {
   color: #99E2D0;
 }
 

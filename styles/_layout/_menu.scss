@@ -69,61 +69,64 @@
     box-shadow: 2px 4px 10px 4px #e4e4e4;
     margin: 0;
     padding: 15px;
+    cursor: pointer;
     animation: 1s ease-out both itemAppear;
     overflow: hidden;
+    max-width: 100%;
     &:hover .menuCard-confirmation {
-        cursor: pointer;
         margin-right: -1rem;
     }
     &:hover .menuCard-icon {
         transform: rotate(0);
     }
-}
 
-.menuCard-description {
-    flex: 1;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis "...";
-    h3 {
+    &-description {
+        flex: 1;
+        width: 150px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        h3 {
+            font-weight: 500;
+        }
+        
+        p {
+            font-weight: 300;
+            padding-top: 5px;
+        }
+    }
+
+
+    &-price {
+        flex-direction: row;
         font-weight: 500;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
-    
-    p {
-        font-weight: 300;
-        padding-top: 5px;
+
+    &-confirmation {
+        background-color: $color-tertiary;
+        margin: -1rem -5rem -1rem 1rem;
+        width: 4rem;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 1s;
     }
-}
+        
+    &-icon {
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: #FFF;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(250deg);
+        transition-duration: 1s;
+    }
 
-.menuCard-price {
-    flex-direction: row;
-    font-weight: 500;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.menuCard-confirmation {
-    background-color: $color-tertiary;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 1s;
-}
-    
-.menuCard-icon {
-    height: 1.6rem;
-    width: 1.6rem;
-    background-color: #FFF;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    transform: rotate(250deg);
-    transition-duration: 1s;
-}
-
-.menuIcon {
-    color: $color-tertiary;
+    .menuIcon {
+        color: $color-tertiary;
+    }
 }
 
 @media (min-width: 970px) {
