@@ -33,7 +33,7 @@
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: 0.4s;
+  transition: 1s;
   font-weight: 900;
   opacity: 0%;
 }
@@ -391,7 +391,7 @@ body {
 
 .menu {
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 }
 
 .menuCard {
@@ -416,7 +416,7 @@ body {
   flex: 1;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis "...";
 }
 .menuCard-description h3 {
   font-weight: 500;
@@ -439,7 +439,7 @@ body {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 
 .menuCard-icon {
@@ -449,8 +449,8 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
+  transform: rotate(250deg);
+  transition-duration: 1s;
 }
 
 .menuIcon {
@@ -467,9 +467,11 @@ body {
     width: 90%;
     flex-direction: row;
     gap: 40px;
+    justify-content: space-around;
   }
   .menu {
-    width: 32%;
+    width: 29%;
+    max-width: 300px;
   }
 }
 @-webkit-keyframes itemAppear {
@@ -493,16 +495,16 @@ body {
   }
 }
 .delay-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-
-.delay-2 {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
 
+.delay-2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
 .delay-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }/*# sourceMappingURL=style.css.map */

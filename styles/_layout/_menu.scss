@@ -60,7 +60,7 @@
 
 .menu {
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
 }
 
 .menuCard {
@@ -84,7 +84,7 @@
     flex: 1;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis "...";
     h3 {
         font-weight: 500;
     }
@@ -108,7 +108,7 @@
     width: 4rem;
     align-items: center;
     justify-content: center;
-    transition-duration: .5s;
+    transition-duration: 1s;
 }
     
 .menuCard-icon {
@@ -118,8 +118,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 100px;
-    transform: rotate(180deg);
-    transition-duration: .5s;
+    transform: rotate(250deg);
+    transition-duration: 1s;
 }
 
 .menuIcon {
@@ -138,10 +138,12 @@
         width: 90%;
         flex-direction: row;
         gap: 40px;
+        justify-content: space-around;
     }
 
     .menu {
-        width: 32%;
+        width: 29%;
+        max-width: 300px;
     }
 }
 
