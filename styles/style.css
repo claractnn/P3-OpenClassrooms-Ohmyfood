@@ -402,8 +402,8 @@ body {
   margin: 0;
   padding: 15px;
   cursor: pointer;
-  -webkit-animation: 1s ease-out both itemAppear;
-          animation: 1s ease-out both itemAppear;
+  -webkit-animation: 1s ease-out both appear;
+          animation: 1s ease-out both appear;
   overflow: hidden;
   max-width: 100%;
 }
@@ -472,7 +472,7 @@ body {
     max-width: 300px;
   }
 }
-@-webkit-keyframes itemAppear {
+@-webkit-keyframes appear {
   0% {
     transform: translateY(50%);
     opacity: 0;
@@ -482,7 +482,7 @@ body {
     opacity: 1;
   }
 }
-@keyframes itemAppear {
+@keyframes appear {
   0% {
     transform: translateY(50%);
     opacity: 0;
@@ -490,6 +490,38 @@ body {
   100% {
     transform: translateY(0%);
     opacity: 1;
+  }
+}
+@-webkit-keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes disappear {
+  from {
+    transform: opacity(1);
+  }
+  to {
+    transform: opacity(0);
+  }
+}
+@keyframes disappear {
+  from {
+    transform: opacity(1);
+  }
+  to {
+    transform: opacity(0);
   }
 }
 .delay-1 {
@@ -505,4 +537,39 @@ body {
 .delay-3 {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
+}
+
+/* LOADING SPINNER */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  -webkit-animation-name: disappear forwards;
+          animation-name: disappear forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid rgb(237, 235, 235);
+  border-top-color: #99E2D0;
+  border-radius: 50%;
+  -webkit-animation: loading 0.75s ease infinite;
+          animation: loading 0.75s ease infinite;
 }/*# sourceMappingURL=style.css.map */
