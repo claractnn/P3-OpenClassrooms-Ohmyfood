@@ -1,0 +1,26 @@
+/* LOADING SPINNER */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation: disappear 1.5s ease-out 2s forwards;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid rgb(237, 235, 235);
+    border-top-color: $color-tertiary;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
