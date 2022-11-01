@@ -19,10 +19,13 @@
 }
 
 @keyframes disappear {
-   from {
+   0% {
     transform: opacity(1);
    }
-   to {
+   50% {
+    transform: opacity(0.5);
+   }
+   100% {
     transform: opacity(0);
    }
 }
