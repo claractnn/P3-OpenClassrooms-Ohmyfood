@@ -148,11 +148,6 @@
 }
 
 /* FOOTER */
-.footer-menu {
-  position: relative;
-  bottom: 60px;
-}
-
 .footerList {
   flex-direction: column;
 }
@@ -420,7 +415,7 @@ body {
 
 .menu {
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .menuCard {
