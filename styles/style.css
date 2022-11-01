@@ -450,10 +450,16 @@ body {
 }
 .menuCard-description h3 {
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menuCard-description p {
   font-weight: 300;
   padding-top: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menuCard-price {
   flex-direction: row;
@@ -542,6 +548,7 @@ body {
   }
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
 @keyframes disappear {
@@ -550,6 +557,7 @@ body {
   }
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
 .delay-1 {
