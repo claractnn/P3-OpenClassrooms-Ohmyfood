@@ -163,21 +163,6 @@ body {
     visibility: hidden;
   }
 }
-.delay-1 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.delay-2 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.delay-3 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-
 /* HOMECARDS */
 .restaurants {
   flex-direction: column;
@@ -320,6 +305,21 @@ body {
   gap: 20px;
 }
 
+.delay-1 {
+  -webkit-animation: appear 0.9s ease-in 0.3s;
+          animation: appear 0.9s ease-in 0.3s;
+}
+
+.delay-2 {
+  -webkit-animation: appear 0.9s ease-in 0.5s;
+          animation: appear 0.9s ease-in 0.5s;
+}
+
+.delay-3 {
+  -webkit-animation: appear 0.9s ease-in 0.8s;
+          animation: appear 0.9s ease-in 0.8s;
+}
+
 .menuCard {
   background-color: white;
   border-radius: 15px;
@@ -327,8 +327,6 @@ body {
   margin: 0;
   padding: 15px;
   cursor: pointer;
-  -webkit-animation: 1s ease-out both appear;
-          animation: 1s ease-out both appear;
   overflow: hidden;
   max-width: 100%;
 }
@@ -470,7 +468,7 @@ body {
   margin: 0 5px 30px;
 }
 
-/* LOGO */
+/* LOGO - FOOTER */
 .footer {
   flex-direction: column;
   background-color: #363636;

@@ -65,6 +65,18 @@
     gap: 20px;
 }
 
+.delay-1 {
+    animation: appear 0.9s ease-in 0.3s;
+}
+
+.delay-2 {
+    animation: appear 0.9s ease-in 0.5s;
+}
+
+.delay-3 {
+    animation: appear 0.9s ease-in 0.8s;
+}
+
 .menuCard {
     background-color: white;
     border-radius: 15px;
@@ -72,7 +84,6 @@
     margin: 0;
     padding: 15px;
     cursor: pointer;
-    animation: 1s ease-out both appear;
     overflow: hidden;
     max-width: 100%;
     &:hover .menuCard-confirmation {
