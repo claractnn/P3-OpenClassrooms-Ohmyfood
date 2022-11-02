@@ -57,12 +57,16 @@
         .footerList ul {
             display: flex;
             flex-direction: row;
-
-            li {
+            .footerItem {
                 cursor: pointer;
-                margin-right: 30px;
+                margin-right: 25px;
             }
         }
     }
 }
     
+@media (max-width: 768px) {
+    .footerItem {
+        margin-bottom: 7px;
+    }
+}
