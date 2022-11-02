@@ -16,11 +16,11 @@
     align-items: center;
     width: 90%;
     height: 70px;
-    justify-content: flex-start;
     margin: 10px 0 10px;
     padding-right: 20px;
-
+    transition: transform 250ms ease-in-out;
     &:hover {
+        transform: scale(1.01);
         background-color: #ae8fd45f;
         cursor: pointer;
         i {

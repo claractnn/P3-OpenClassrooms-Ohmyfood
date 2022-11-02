@@ -22,6 +22,9 @@
         align-items: left;
         position: relative;
         right: 90%;
+        &:hover {
+        color: $color-primary;
+        }
     }
 }
 

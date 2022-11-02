@@ -5,10 +5,11 @@
     background-color: #363636;
     padding-bottom: 15px;
     padding-top: 10px;
+    position: relative;
 }
 
 .logo-footer {
-    font-family: 'Shrikhand', cursive;
+    font-family: $font-title;
     font-size: large;
     color: white;
     margin: 20px 10px 0;
@@ -21,23 +22,31 @@
 .footerList {
     flex-direction: column;
 
+    p {
+        color: white;
+        margin-left: 5px;
+        font-family: $font;
+        font-size: 16px;
+        &:hover {
+            color: $color-tertiary;
+        }
+    }
+
     li {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        padding: 0px;
-    
-        p {
+        i {
+            display: flex;
+            align-items: center;
+            padding: 0px;
             color: white;
-            margin: 5px 0 5px;
+            &:hover {
+                color: $color-tertiary;
+            }       
         }
     }
 }
 
-.fa-footer {
-    color: white;
-    padding: 0px 10px 0 0;
-} 
 
 @media (min-width: 768px) {
 
