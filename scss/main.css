@@ -378,7 +378,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(250deg);
+  transform: rotate(350deg);
   transition-duration: 1s;
 }
 .menuCard .menuIcon {

@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../scss/main.css">
+    <link rel="stylesheet" type="text/css" href="../scss/_base/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c74c29e20b.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,33 +20,187 @@
     <div id="main">
         <!-- HEADER -->
         <header>
-        <div class="logo">
-            <img src="images/logo/ohmyfood.png" alt="Ohmyfood">
-        </div>
-        <div class="header-menu-img">
-            <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-        </div>
+            <div class="header-menu flex">
+                <a href="../accueil.html">
+                <i class="fas fa-arrow-left flex"></i>
+                </a>
+                <div class="logo">
+                    <img src="../images/logo/ohmyfood.png" alt="Ohmyfood">
+                </div>
+            </div>
+            <div class="header-menu-img">
+                <img src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+            </div>
         </header>
 
+        <!-- MENUS -->
+        <section class="containerMenus flex">
+            <header class="headerMenu flex">
+                <h1 class="headerMenuTitle">La note enchantée</h1>
+                <div class="headerMenuLike">
+                    <i class="far restaurantLike fa-heart"></i>
+                    <i class="fas heart-color restaurantLike fa-heart"></i>
+                </div>
+            </header>
+
+            <section class="containerMenu flex">
+                <!-- STARTERS -->
+                <section class="menu flex">
+                <h2 class="menuTitle flex">ENTRÉES</h2>
+                    
+                    <section class="menuCard delay-1 flex">
+                        <header class="menuCard-description">
+                                <h3>Ravioles de foie gras</h3>
+                                <p>Accompagnés de leur crème à la truffe</p>
+                        </header>
+                        <div class="menuCard-price flex">25€</div>  
+                        <div class="menuCard-confirmation flex">
+                            <div class="menuCard-icon flex">
+                            <i class="fas fa-check menuIcon"></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="menuCard delay-2 flex">
+                        <header class="menuCard-description">
+                                <h3>Caviar osciètre</h3>
+                                <p>Sur blini à la farine de blé noir</p>
+                        </header>
+                        <div class="menuCard-price flex">35€</div>  
+                        <div class="menuCard-confirmation flex">
+                            <div class="menuCard-icon flex">
+                                <i class="fas fa-check menuIcon"></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="menuCard delay-3 flex">
+                        <header class="menuCard-description">
+                                <h3>Homard et espuma de potiron</h3>
+                                <p>Mariné aux zestes d'orange</p>
+                        </header>
+                        <div class="menuCard-price flex">20€</div>  
+                        <div class="menuCard-confirmation flex">
+                            <div class="menuCard-icon flex">
+                                <i class="fas fa-check menuIcon"></i>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- MAINCOURSE -->
+                <section class="menu flex">
+                <h2 class="menuTitle flex">PLATS</h2>
+                    
+                    <section class="menuCard delay-1 flex">
+                        <header class="menuCard-description">
+                                <h3>Noix de coquilles Saint-Jacques</h3>
+                                <p>Sur lit de purée de céleri-rave</p>
+                        </header>
+                        <div class="menuCard-price flex">40€</div>  
+                        <div class="menuCard-confirmation flex">
+                            <div class="menuCard-icon flex">
+                            <i class="fas fa-check menuIcon"></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="menuCard delay-2 flex">
+                        <header class="menuCard-description">
+                                <h3>Langoustine poêlée</h3>
+                                <p>Purée de patate douce</p>
+                        </header>
+                        <div class="menuCard-price flex">35€</div>  
+                        <div class="menuCard-confirmation flex">
+                            <div class="menuCard-icon flex">
+                                <i class="fas fa-check menuIcon"></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="menuCard delay-3 flex">
+                        <header class="menuCard-description">
+                                <h3>Mijoté de queue de boeuf</h3>
+                                <p>Et riz sauvage aux zestes de citron</p>
+                        </header>
+                        <div class="menuCard-price flex">44€</div>  
+                        <div class="menuCard-confirmation flex">
+                            <div class="menuCard-icon flex">
+                                <i class="fas fa-check menuIcon"></i>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- DESSERTS -->
+                <section class="menu flex">
+                <h2 class="menuTitle flex">DESSERTS</h2>
+                    
+                    <section class="menuCard delay-1 flex">
+                        <header class="menuCard-description">
+                                <h3>Macaron noisette et chocolat</h3>
+                                <p>Glace au caramel brun et sel de Guérande</p>
+                        </header>
+                        <div class="menuCard-price flex">18€</div>  
+                        <div class="menuCard-confirmation flex">
+                            <div class="menuCard-icon flex">
+                            <i class="fas fa-check menuIcon"></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="menuCard delay-2 flex">
+                        <header class="menuCard-description">
+                                <h3>Baba au rhum revisité</h3>
+                                <p>Avec son coulis de citron</p>
+                        </header>
+                        <div class="menuCard-price flex">22€</div>  
+                        <div class="menuCard-confirmation flex">
+                            <div class="menuCard-icon flex">
+                                <i class="fas fa-check menuIcon"></i>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="menuCard delay-3 flex">
+                        <header class="menuCard-description">
+                                <h3>Tarte au citron meringuée</h3>
+                                <p>Déstructurée</p>
+                        </header>
+                        <div class="menuCard-price flex">23€</div>  
+                        <div class="menuCard-confirmation flex">
+                            <div class="menuCard-icon flex">
+                                <i class="fas fa-check menuIcon"></i>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <button class="btn btn-command" type="button">Commander</button>
+
+        </section>
+
+
+
         <!-- FOOTER -->
-        <footer class="footer flex">
+        <footer class="footer footer-menu flex">
             <span class="logo-footer flex">ohmyfood</span>
 
                 <div class="footerList flex">
                     <ul>
-                        <li>
-                            <i class="fa-solid fa-footer fa-utensils"></i>
-                            <p>Proposer un restaurant</p>
+                        <li class="footerItem flex">
+                            <i class="fas fa-footer fa-utensils"></i>
+                            <p>Proposer un restaurant</p>    
                         </li>
-                        <li>
-                            <i class="fa-solid fa-footer fa-handshake-angle"></i>
+                        <li class="footerItem flex">
+                            <i class="fas fa-footer fa-handshake-angle"></i>
                             <p>Devenir partenaire</p>
                         </li>
-                        <li> 
+                        <li class="footerItem"> 
                             <p>Mentions légales</p>
                         </li>
-                        <li>
-                            <p>Contact</p>
+                        <li class="footerItem">
+                            <a href="mailto:ohmyfood@gmail.com"><p>Contact</p></a>
                         </li>
                     </ul>
                 </div>
@@ -54,3 +208,4 @@
     </div>
 </body>
 </html>
+    
