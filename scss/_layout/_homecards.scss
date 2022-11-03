@@ -5,6 +5,9 @@
     background-color: #f3f3f3;
     margin-top: 40px;
     padding-bottom: 50px;
+    h2 {
+        margin: 40px 0 20px 20px;
+    }
 }
 
 .containerRestaurants {
@@ -64,15 +67,9 @@
 .cardRestaurantDescription {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 15px 15px 15px;
     position: relative;
-}
-
-.cardRestaurantIcon {
-    .restaurantLike {
-        top: 20%;
-        right: 2%; 
-    }
 }
 
 @media (min-width: 768px) {

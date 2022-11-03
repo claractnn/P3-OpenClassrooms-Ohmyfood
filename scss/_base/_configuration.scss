@@ -5,17 +5,17 @@ html {
     height: 100%;
 }
 
+#main {
+    max-width: 1500px;
+    margin: auto;
+}
+
 .flex {
     display: flex;
 }
 
-
 h1 {
     margin: 20px 40px 10px;
-}
-
-h2 {
-    margin: 40px 0 20px 20px;
 }
 
 h3 {

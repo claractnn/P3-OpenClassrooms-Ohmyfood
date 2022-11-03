@@ -1,5 +1,11 @@
 /*  PRESENTATION */ 
 
+.presentation {
+    h2 {
+        margin: 40px 0 20px 20px;
+    }
+}
+
 .presentationList {
     display: flex;
     flex-direction: column;
@@ -21,7 +27,7 @@
     transition: transform 250ms ease-in-out;
     &:hover {
         transform: scale(1.01);
-        background-color: #ae55d15f;
+        background-color: #d681f85f;
         cursor: pointer;
         i {
             color: $color-primary;
