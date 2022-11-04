@@ -13,7 +13,8 @@
     }
 }
 
-.header-menu {
+/* HEADER RESTAURANTS PAGE */
+.menu__big__header {
     justify-content: center;
     align-items: center;
     .fa-arrow-left {
@@ -24,6 +25,13 @@
         color: $color-primary;
         }
     }
+}
+
+/* MENU BIG HEADER */
+.menu__big__header--img img {
+    width: 100%;
+    max-height: 25rem;
+    object-fit: cover;
 }
 
 

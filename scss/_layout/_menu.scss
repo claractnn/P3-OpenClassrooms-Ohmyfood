@@ -1,5 +1,5 @@
 /* MENU */ 
-.containerMenus {
+.menu__container--global {
     width: 100%;
     background-color: #f3f3f3;
     flex-direction: column;
@@ -9,14 +9,9 @@
     position: relative;
 }
 
-/* HEADER MENU */
-.header-menu-img img {
-    width: 100%;
-    max-height: 25rem;
-    object-fit: cover;
-}
+/* MENU HEADER */
 
-.headerMenu {
+.menu__header {
     align-items: center;
     padding: 2px 5px 2px;
     justify-content: center;
@@ -30,19 +25,19 @@
 }
 
 /* CONTAINER MENUS */
-.containerMenu {
+.menu__container--bloc {
     flex-direction: column;
     gap: 15px;
     margin: 10px;
 
-    .menuTitle {
+    .menu__title {
         font-weight: 300;
         margin: 30px 0 5px 0;
         font-size: 1.1em;
         position: relative;
     }
 
-    .menuTitle:after {
+    .menu__title::after {
         content: "";
         width: 45px;
         height: 3px;
@@ -70,7 +65,7 @@
     animation: appear 0.9s ease-in 0.8s;
 }
 
-.menuCard {
+.menu__card {
     background-color: white;
     border-radius: 15px;
     box-shadow: 2px 4px 10px 4px #e4e4e4;
@@ -79,14 +74,14 @@
     cursor: pointer;
     overflow: hidden;
     max-width: 100%;
-    &:hover .menuCard-confirmation {
+    &:hover .menu__card--confirmation {
         margin-right: -1rem;
     }
-    &:hover .menuCard-icon {
+    &:hover .menu__card--icon {
         transform: rotate(0);
     }
 
-    &-description {
+    &--description {
         flex: 1;
         width: 150px;
         h3 {
@@ -106,14 +101,14 @@
     }
 
 
-    &-price {
+    &--price {
         flex-direction: row;
         font-weight: 500;
         justify-content: flex-end;
         align-items: flex-end;
     }
 
-    &-confirmation {
+    &--confirmation {
         background-color: $color-tertiary;
         margin: -1rem -5rem -1rem 1rem;
         width: 4rem;
@@ -122,7 +117,7 @@
         transition-duration: 1s;
     }
         
-    &-icon {
+    &--icon {
         height: 1.6rem;
         width: 1.6rem;
         background-color: #FFF;
@@ -133,7 +128,7 @@
         transition-duration: 1s;
     }
 
-    .menuIcon {
+    .menu__icon {
         color: $color-tertiary;
     }
 }
@@ -144,12 +139,12 @@
 
 @media (min-width: 970px) {
 
-    .containerMenus {
+    .menu__container--global {
         width: 90%;
         align-items: center;
     }
 
-    .containerMenu {
+    .menu__container--bloc {
         width: 96%;
         flex-direction: row;
         gap: 30px;
