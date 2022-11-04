@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.logo-footer {
+.footer__logo {
     font-family: $font-title;
     font-size: large;
     color: white;
@@ -18,7 +18,7 @@
 
 /* FOOTER */ 
 
-.footerList {
+.footer__list {
     flex-direction: column;
     height: 32%;
 }
@@ -28,7 +28,7 @@
     margin-right: 6px;
 }
 
-.footerItem {
+.footer__item {
     flex-direction: row;
     align-items: center;
     color: white;
@@ -50,14 +50,14 @@
         justify-items: center;
         align-items: center;
 
-    .logo-footer {
+    .footer__logo {
         margin: 0;
     }
        
-        .footerList ul {
+        .footer__list ul {
             display: flex;
             flex-direction: row;
-            .footerItem {
+            .footer__item {
                 cursor: pointer;
                 margin-right: 25px;
             }

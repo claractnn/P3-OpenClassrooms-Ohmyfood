@@ -1,5 +1,4 @@
 /* LOGO */
-
 .logo {
     display: flex;
     text-align: center;
@@ -27,46 +26,7 @@
     }
 }
 
-/* LOCATION */
 
-.location {
-    height: 40px;
-    background-color: #E3E3E3;
-    box-shadow: inset 0px 20px 7px -20px #B8B8B8;
-
-    .locationBar {
-        justify-content: center;
-        padding: 12px;
-    
-        .containerLocation {
-            margin-right: 15px;
-            align-items: center;
-        }
-    }
-}
-
-.searchText {
-    background: transparent;
-    border: none;
-    color: black;
-    max-width: 125px;
-}
-
-/* RÉSERVATION */
-
-.reservation {
-    background-color: #F3F3F3;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 30px 40px;
-    
-    p {
-        font-weight: 200;
-        margin: 0 5px 30px;
-    }    
-}
 
 
 

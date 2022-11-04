@@ -1,19 +1,19 @@
 /*  PRESENTATION */ 
 
-.presentation {
+.operation {
     h2 {
         margin: 40px 0 20px 20px;
     }
 }
 
-.presentationList {
+.operation__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
 }
 
-.presentationItem {
+.operation__item {
     flex-direction: row;
     background: #f6f6f6;
     box-shadow: 2px 6px 8px 4px #e7e7e7;
@@ -35,7 +35,7 @@
     }
 }
 
-.numberIcon {
+.operation__number {
     margin-left: -10px;
     background-color: $color-primary;
     border: none;
@@ -45,7 +45,7 @@
     color: white;
 }
 
-.presentationItem i {
+.operation__item i {
     padding: 0 25px 0;
     color: #b3b3b3;
 }
@@ -54,11 +54,11 @@
 
     /* HEADER TABLET */
 
-    .presentationList {
+    .operation__list {
         display: flex;
         flex-direction: row;
 
-        .presentationItem {
+        .operation__item {
             margin: 0 20px 0 0;
         }
     }

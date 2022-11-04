@@ -162,6 +162,42 @@ body {
     visibility: hidden;
   }
 }
+/* LOCATION */
+.location {
+  height: 40px;
+  background-color: #E3E3E3;
+  box-shadow: inset 0px 20px 7px -20px #B8B8B8;
+}
+.location .location__bar {
+  justify-content: center;
+  padding: 12px;
+}
+.location .location__bar .location__container {
+  margin-right: 15px;
+  align-items: center;
+}
+
+.searchText {
+  background: transparent;
+  border: none;
+  color: black;
+  max-width: 125px;
+}
+
+/* EXPLORER */
+.explorer {
+  background-color: #F3F3F3;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 30px 40px;
+}
+.explorer p {
+  font-weight: 200;
+  margin: 0 5px 30px;
+}
+
 /* HOMECARDS */
 .restaurants {
   flex-direction: column;
@@ -173,13 +209,13 @@ body {
   margin: 40px 0 20px 20px;
 }
 
-.containerRestaurants {
+.restaurants__container {
   flex-direction: column;
   gap: 30px;
   margin: 0 20px 0;
 }
 
-.cardRestaurant {
+.restaurants__card {
   position: relative;
   flex-direction: column;
   justify-content: space-between;
@@ -190,18 +226,18 @@ body {
   cursor: pointer;
   transition: transform 250ms ease-in-out;
 }
-.cardRestaurant:hover {
+.restaurants__card:hover {
   transform: scale(1.01);
   box-shadow: 2px 6px 8px 4px #d3d3d3;
   transition: 1s;
 }
-.cardRestaurant img {
+.restaurants__card img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 150px;
 }
-.cardRestaurant .cardBadge {
+.restaurants__card .restaurants__badge {
   position: absolute;
   background-color: #99E2D0;
   color: #1b6150;
@@ -211,21 +247,21 @@ body {
   right: 20px;
 }
 
-.cardRestaurantDescriptionText {
+.restaurants__description--text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.cardRestaurantDescriptionText h3 {
+.restaurants__description--text h3 {
   margin: 0;
 }
 
-.cardRestaurantDescriptionText p {
+.restaurants__description--text p {
   margin: 5px 0 0;
   font-weight: 300;
 }
 
-.cardRestaurantDescription {
+.restaurants__description {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -234,12 +270,12 @@ body {
 }
 
 @media (min-width: 768px) {
-  .containerRestaurants {
+  .restaurants__container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .cardRestaurant {
+  .restaurants__card {
     width: 47%;
   }
 }
@@ -425,42 +461,6 @@ body {
   color: #9356DC;
 }
 
-/* LOCATION */
-.location {
-  height: 40px;
-  background-color: #E3E3E3;
-  box-shadow: inset 0px 20px 7px -20px #B8B8B8;
-}
-.location .locationBar {
-  justify-content: center;
-  padding: 12px;
-}
-.location .locationBar .containerLocation {
-  margin-right: 15px;
-  align-items: center;
-}
-
-.searchText {
-  background: transparent;
-  border: none;
-  color: black;
-  max-width: 125px;
-}
-
-/* RÉSERVATION */
-.reservation {
-  background-color: #F3F3F3;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px 30px 40px;
-}
-.reservation p {
-  font-weight: 200;
-  margin: 0 5px 30px;
-}
-
 /* LOGO - FOOTER */
 .footer {
   flex-direction: column;
@@ -469,7 +469,7 @@ body {
   position: relative;
 }
 
-.logo-footer {
+.footer__logo {
   font-family: "Shrikhand", cursive;
   font-size: large;
   color: white;
@@ -479,7 +479,7 @@ body {
 }
 
 /* FOOTER */
-.footerList {
+.footer__list {
   flex-direction: column;
   height: 32%;
 }
@@ -489,16 +489,16 @@ body {
   margin-right: 6px;
 }
 
-.footerItem {
+.footer__item {
   flex-direction: row;
   align-items: center;
   color: white;
   font-weight: 400;
 }
-.footerItem:hover {
+.footer__item:hover {
   cursor: pointer;
 }
-.footerItem:hover i, .footerItem:hover p {
+.footer__item:hover i, .footer__item:hover p {
   color: #99E2D0;
 }
 
@@ -509,14 +509,14 @@ body {
     justify-items: center;
     align-items: center;
   }
-  .footer .logo-footer {
+  .footer .footer__logo {
     margin: 0;
   }
-  .footer .footerList ul {
+  .footer .footer__list ul {
     display: flex;
     flex-direction: row;
   }
-  .footer .footerList ul .footerItem {
+  .footer .footer__list ul .footer__item {
     cursor: pointer;
     margin-right: 25px;
   }
@@ -527,18 +527,18 @@ body {
   }
 }
 /*  PRESENTATION */
-.presentation h2 {
+.operation h2 {
   margin: 40px 0 20px 20px;
 }
 
-.presentationList {
+.operation__list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
 }
 
-.presentationItem {
+.operation__item {
   flex-direction: row;
   background: #f6f6f6;
   box-shadow: 2px 6px 8px 4px #e7e7e7;
@@ -551,16 +551,16 @@ body {
   padding-right: 20px;
   transition: transform 250ms ease-in-out;
 }
-.presentationItem:hover {
+.operation__item:hover {
   transform: scale(1.01);
   background-color: rgba(214, 129, 248, 0.3725490196);
   cursor: pointer;
 }
-.presentationItem:hover i {
+.operation__item:hover i {
   color: #9356DC;
 }
 
-.numberIcon {
+.operation__number {
   margin-left: -10px;
   background-color: #9356DC;
   border: none;
@@ -570,18 +570,18 @@ body {
   color: white;
 }
 
-.presentationItem i {
+.operation__item i {
   padding: 0 25px 0;
   color: #b3b3b3;
 }
 
 @media (min-width: 768px) {
   /* HEADER TABLET */
-  .presentationList {
+  .operation__list {
     display: flex;
     flex-direction: row;
   }
-  .presentationList .presentationItem {
+  .operation__list .operation__item {
     margin: 0 20px 0 0;
   }
 }/*# sourceMappingURL=main.css.map */

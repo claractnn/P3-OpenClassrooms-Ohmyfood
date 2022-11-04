@@ -1,5 +1,45 @@
-/* HOMECARDS */
 
+/* LOCATION */
+.location {
+    height: 40px;
+    background-color: #E3E3E3;
+    box-shadow: inset 0px 20px 7px -20px #B8B8B8;
+
+    .location__bar {
+        justify-content: center;
+        padding: 12px;
+    
+        .location__container {
+            margin-right: 15px;
+            align-items: center;
+        }
+    }
+}
+
+.searchText {
+    background: transparent;
+    border: none;
+    color: black;
+    max-width: 125px;
+}
+
+/* EXPLORER */
+.explorer {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 30px 40px;
+    
+    p {
+        font-weight: 200;
+        margin: 0 5px 30px;
+    }    
+}
+
+
+/* HOMECARDS */
 .restaurants {
     flex-direction: column;
     background-color: #f3f3f3;
@@ -10,13 +50,13 @@
     }
 }
 
-.containerRestaurants {
+.restaurants__container {
     flex-direction: column;
     gap: 30px;
     margin: 0 20px 0;
 }
 
-.cardRestaurant {
+.restaurants__card {
     position: relative;
     flex-direction: column;
     justify-content: space-between;
@@ -38,7 +78,7 @@
         height: 150px;
     }
 
-    .cardBadge {
+    .restaurants__badge {
         position: absolute;
         background-color: #99E2D0;
         color: darken(#99E2D0, 50%);
@@ -49,7 +89,7 @@
     }
 }
 
-.cardRestaurantDescriptionText {
+.restaurants__description--text {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -59,12 +99,12 @@
     }
 }
 
-.cardRestaurantDescriptionText p {
+.restaurants__description--text p {
     margin: 5px 0 0;
     font-weight: 300;
 }
 
-.cardRestaurantDescription {
+.restaurants__description {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -74,13 +114,13 @@
 
 @media (min-width: 768px) {
 
-    .containerRestaurants {
+    .restaurants__container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 
-    .cardRestaurant {
+    .restaurants__card {
         width: 47%;
     }
 }
