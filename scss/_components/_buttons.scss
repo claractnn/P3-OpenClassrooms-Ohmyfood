@@ -15,7 +15,7 @@
     &:hover {
         background-color: white;
         transition: 0.5s;
-        box-shadow: 3px 2px 6px #7f7f7f;
+        box-shadow: 3px 2px 5px #7f7f7f;
         opacity: 0.9;
     }
 }
@@ -27,8 +27,7 @@
     align-items: center;
     cursor: pointer;
     &:hover {
-    transition: .8s;
-    display: inline-block;
+    transition: 1.2s;
     opacity: 1;
     background: $color-gradient;
     background-clip: text;
