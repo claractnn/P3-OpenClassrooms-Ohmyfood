@@ -15,12 +15,16 @@
 
 /* HEADER RESTAURANTS PAGE */
 .menu__big__header {
+    position: relative;
     justify-content: center;
-    align-items: center;
     .fa-arrow-left {
         font-size: x-large;
-        position: relative;
-        right: 90%;
+        position: absolute;
+        align-items: center;
+        top: 32%;
+        left: 2rem;
+        height: 2rem;
+        width: 2rem;
         &:hover {
         color: $color-primary;
         }

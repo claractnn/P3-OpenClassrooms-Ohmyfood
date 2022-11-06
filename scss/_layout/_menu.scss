@@ -10,13 +10,12 @@
 }
 
 /* MENU HEADER */
-
 .menu__header {
     align-items: center;
     padding: 2px 5px 2px;
     justify-content: center;
     h2 {
-        font-family: 'Shrikhand', cursive;
+        font-family: $font-title;
         font-size: x-large;
     }
     i {

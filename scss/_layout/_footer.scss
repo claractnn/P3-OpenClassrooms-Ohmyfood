@@ -1,26 +1,37 @@
-/* LOGO - FOOTER */
-
+/* FOOTER - LOGO  */
 .footer {
     flex-direction: column;
     background-color: #363636;
     padding: 10px 0 15px;
     position: relative;
-}
 
-.footer__logo {
-    font-family: $font-title;
-    font-size: large;
-    color: white;
-    margin: 20px 10px 0;
-    padding-left: 30px;
-    align-items: center;
+    .footer__logo {
+        font-family: $font-title;
+        font-size: large;
+        color: white;
+        margin: 20px 10px 0;
+        padding-left: 30px;
+        align-items: center;
+    }
 }
 
 /* FOOTER */ 
-
 .footer__list {
     flex-direction: column;
     height: 32%;
+
+    .footer__item {
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        font-weight: 400;
+        &:hover {
+            cursor: pointer;
+            i,p {
+                color: $color-tertiary;
+            }
+        }
+    }
 }
 
 .fa-footer {
@@ -28,23 +39,9 @@
     margin-right: 6px;
 }
 
-.footer__item {
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    font-weight: 400;
-    &:hover {
-        cursor: pointer;
-        i,p {
-            color: $color-tertiary;
-        }
-    }
-}
-
 @media (min-width: 768px) {
 
     /* FOOTER TABLET*/
-
     .footer {
         flex-direction: row;
         justify-items: center;
@@ -66,7 +63,7 @@
 }
     
 @media (max-width: 768px) {
-    .footerItem {
+    .footer__item {
         margin-bottom: 7px;
     }
 }

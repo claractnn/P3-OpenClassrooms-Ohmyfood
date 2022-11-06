@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* VARIABLES - COULEURS */ /* LOADING SPINNER */
+/* VARIABLES - COLORS */
+/* VARIABLES - FONTS */
+/* LOADING SPINNER */
 .loader {
   position: fixed;
   top: 0;
@@ -218,8 +220,7 @@ body {
   gap: 30px;
   margin: 0 20px 0;
 }
-
-.restaurants__card {
+.restaurants__container .restaurants__card {
   position: relative;
   flex-direction: column;
   justify-content: space-between;
@@ -230,18 +231,18 @@ body {
   cursor: pointer;
   transition: transform 250ms ease-in-out;
 }
-.restaurants__card:hover {
+.restaurants__container .restaurants__card:hover {
   transform: scale(1.01);
   box-shadow: 2px 6px 8px 4px #d3d3d3;
   transition: 1s;
 }
-.restaurants__card img {
+.restaurants__container .restaurants__card img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 150px;
 }
-.restaurants__card .restaurants__badge {
+.restaurants__container .restaurants__card .restaurants__badge {
   position: absolute;
   background-color: #99E2D0;
   color: #1b6150;
@@ -251,26 +252,24 @@ body {
   right: 20px;
 }
 
-.restaurants__description--text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.restaurants__description--text h3 {
-  margin: 0;
-}
-
-.restaurants__description--text p {
-  margin: 5px 0 0;
-  font-weight: 300;
-}
-
 .restaurants__description {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 15px 15px 15px;
   position: relative;
+}
+.restaurants__description .restaurants__description--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.restaurants__description .restaurants__description--text h3 {
+  margin: 0;
+}
+.restaurants__description .restaurants__description--text p {
+  margin: 5px 0 0;
+  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -279,7 +278,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .restaurants__card {
+  .restaurants__container .restaurants__card {
     width: 47%;
   }
 }
@@ -447,13 +446,17 @@ body {
 
 /* HEADER RESTAURANTS PAGE */
 .menu__big__header {
+  position: relative;
   justify-content: center;
-  align-items: center;
 }
 .menu__big__header .fa-arrow-left {
   font-size: x-large;
-  position: relative;
-  right: 90%;
+  position: absolute;
+  align-items: center;
+  top: 32%;
+  left: 2rem;
+  height: 2rem;
+  width: 2rem;
 }
 .menu__big__header .fa-arrow-left:hover {
   color: #9356DC;
@@ -467,15 +470,14 @@ body {
      object-fit: cover;
 }
 
-/* LOGO - FOOTER */
+/* FOOTER - LOGO  */
 .footer {
   flex-direction: column;
   background-color: #363636;
   padding: 10px 0 15px;
   position: relative;
 }
-
-.footer__logo {
+.footer .footer__logo {
   font-family: "Shrikhand", cursive;
   font-size: large;
   color: white;
@@ -489,23 +491,22 @@ body {
   flex-direction: column;
   height: 32%;
 }
-
-.fa-footer {
-  color: white;
-  margin-right: 6px;
-}
-
-.footer__item {
+.footer__list .footer__item {
   flex-direction: row;
   align-items: center;
   color: white;
   font-weight: 400;
 }
-.footer__item:hover {
+.footer__list .footer__item:hover {
   cursor: pointer;
 }
-.footer__item:hover i, .footer__item:hover p {
+.footer__list .footer__item:hover i, .footer__list .footer__item:hover p {
   color: #99E2D0;
+}
+
+.fa-footer {
+  color: white;
+  margin-right: 6px;
 }
 
 @media (min-width: 768px) {
@@ -528,7 +529,7 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .footerItem {
+  .footer__item {
     margin-bottom: 7px;
   }
 }
@@ -536,15 +537,13 @@ body {
 .operation h2 {
   margin: 40px 0 20px 20px;
 }
-
-.operation__list {
+.operation .operation__list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
 }
-
-.operation__item {
+.operation .operation__list .operation__item {
   flex-direction: row;
   background: #f6f6f6;
   box-shadow: 2px 6px 8px 4px #e7e7e7;
@@ -557,13 +556,18 @@ body {
   padding-right: 20px;
   transition: transform 250ms ease-in-out;
 }
-.operation__item:hover {
+.operation .operation__list .operation__item:hover {
   transform: scale(1.01);
   background-color: rgba(214, 129, 248, 0.3725490196);
   cursor: pointer;
 }
-.operation__item:hover i {
+.operation .operation__list .operation__item:hover i {
   color: #9356DC;
+}
+
+.operation__item i {
+  padding: 0 25px 0;
+  color: #b3b3b3;
 }
 
 .operation__number {
@@ -574,11 +578,6 @@ body {
   padding: 4px 8px 4px;
   justify-content: center;
   color: white;
-}
-
-.operation__item i {
-  padding: 0 25px 0;
-  color: #b3b3b3;
 }
 
 @media (min-width: 768px) {
