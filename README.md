@@ -7,7 +7,7 @@ Troisième projet du parcours "Développeur web" chez OpenClassrooms. L'objectif
 - Développer un site proposant le menu de 4 grands restaurants parisiens.
 - Permettre la réservation en ligne et la composition de menus.
 
-#Lien site web
+# Lien site web
 https://claractnn.github.io/Ohmyfood/
 
 # Livrables 
@@ -51,6 +51,7 @@ Couleurs :
 Primaire: #9356DC
 Secondaire: #FF79DA
 Tertiaire: #99E2D0
+
 Contraintes :
 
 Approche mobile-first: oui
