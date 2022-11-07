@@ -77,7 +77,7 @@
         margin-right: -1rem;
     }
     &:hover .menu__card--icon {
-        transform: rotate(0);
+        animation: check-rotate 0.6s ease-in forwards;
     }
 
     &--description {

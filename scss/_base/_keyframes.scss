@@ -28,3 +28,12 @@
     visibility: hidden;
    }
 }
+
+@keyframes check-rotate {
+  from {
+    transform: rotate(300deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}

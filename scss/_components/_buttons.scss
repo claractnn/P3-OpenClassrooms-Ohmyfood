@@ -29,10 +29,10 @@
     &:hover {
     transition: 1.2s;
     opacity: 1;
-    background: $color-gradient;
+    color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    background-image: $color-gradient;
     font-weight: bold;
     }
 }
