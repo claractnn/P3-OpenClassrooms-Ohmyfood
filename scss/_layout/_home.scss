@@ -3,11 +3,9 @@
     height: 40px;
     background-color: #E3E3E3;
     box-shadow: inset 0px 20px 7px -20px #B8B8B8;
-
     .location__bar {
         justify-content: center;
         padding: 12px;
-    
         .location__container {
             margin-right: 15px;
             align-items: center;
@@ -30,7 +28,6 @@
     flex-direction: column;
     text-align: center;
     padding: 20px 30px 40px;
-    
     p {
         font-weight: 200;
         margin: 0 5px 30px;
@@ -68,13 +65,11 @@
             box-shadow: 2px 6px 8px 4px #d3d3d3;
             transition: 1s;
         }
-
         img {
             object-fit: cover;
             width: 100%;
             height: 150px;
         }
-
         .restaurants__badge {
             position: absolute;
             background-color: #99E2D0;
@@ -93,16 +88,13 @@
     align-items: center;
     margin: 15px 15px 15px;
     position: relative;
-
     .restaurants__description--text {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-
         h3 {
             margin: 0;
         }
-
         p {
             margin: 5px 0 0;
             font-weight: 300;
@@ -116,7 +108,6 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-
         .restaurants__card {
             width: 47%;
         }

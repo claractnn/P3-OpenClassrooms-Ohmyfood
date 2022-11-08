@@ -1,8 +1,6 @@
 /*  OPERATION */ 
-.operation {
-    h2 {
+.operation h2 {
         margin: 40px 0 20px 20px;
-    }
 }
 
 .operation__list {
@@ -55,7 +53,6 @@
     .operation__list {
         display: flex;
         flex-direction: row;
-
         .operation__item {
             margin: 0 20px 0 0;
         }

@@ -31,14 +31,12 @@
     flex-direction: column;
     gap: 15px;
     margin: 10px;
-
     .menu__title {
         font-weight: 300;
         margin: 30px 0 5px 0;
         font-size: 1.1em;
         position: relative;
     }
-
     .menu__title::after {
         content: "";
         width: 45px;
@@ -83,7 +81,6 @@
     &:hover .menu__card--icon {
         animation: check-rotate 0.7s ease-in forwards;
     }
-
     &--description {
         flex: 1;
         width: 150px;
@@ -93,7 +90,6 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        
         p {
             font-weight: 300;
             padding-top: 5px;
@@ -102,23 +98,19 @@
             text-overflow: ellipsis;
         }
     }
-
-
     &--price {
         flex-direction: row;
         font-weight: 500;
         justify-content: flex-end;
         align-items: flex-end;
     }
-
     &--confirmation {
         background-color: $color-tertiary;
         margin: -1rem -5rem -1rem 1rem;
         width: 4rem;
         align-items: center;
         justify-content: center;
-    }
-        
+    }   
     &--icon {
         height: 1.6rem;
         width: 1.6rem;
@@ -127,7 +119,6 @@
         justify-content: center;
         border-radius: 100px;
     }
-
     .menu__icon {
         color: $color-tertiary;
     }

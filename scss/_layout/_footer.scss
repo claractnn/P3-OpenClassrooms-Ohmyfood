@@ -4,7 +4,6 @@
     background-color: #363636;
     padding: 10px 0 15px;
     position: relative;
-
     .footer__logo {
         font-family: $font-title;
         font-size: large;
@@ -19,7 +18,6 @@
 .footer__list {
     flex-direction: column;
     height: 32%;
-
     .footer__item {
         flex-direction: row;
         align-items: center;
@@ -50,7 +48,6 @@
     .footer__logo {
         margin: 0;
     }
-       
         .footer__list ul {
             display: flex;
             flex-direction: row;

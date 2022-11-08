@@ -121,6 +121,7 @@ body {
 }
 
 /* ANIMATIONS */
+/* MENUS CARDS APPEAR GRADUALLY */
 @-webkit-keyframes appear {
   0% {
     transform: translateY(50%);
@@ -141,6 +142,7 @@ body {
     opacity: 1;
   }
 }
+/* LOADING SPINNER */
 @-webkit-keyframes loading {
   from {
     transform: rotate(0turn);
@@ -157,6 +159,7 @@ body {
     transform: rotate(1turn);
   }
 }
+/* LOADING SPINNER DISAPPEAR */
 @-webkit-keyframes disappear {
   from {
     opacity: 1;
@@ -175,6 +178,7 @@ body {
     visibility: hidden;
   }
 }
+/* ICON ROTATE CHECKBOX */
 @-webkit-keyframes check-rotate {
   from {
     transform: rotate(300deg);
@@ -191,6 +195,7 @@ body {
     transform: rotate(0);
   }
 }
+/* HEART TRANSITION */
 @-webkit-keyframes full {
   from {
     opacity: 0;

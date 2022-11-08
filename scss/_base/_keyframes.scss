@@ -1,4 +1,6 @@
 /* ANIMATIONS */
+
+/* MENUS CARDS APPEAR GRADUALLY */
 @keyframes appear {
     0% {
       transform: translateY(50%); 
@@ -10,6 +12,7 @@
     }
   }
 
+/* LOADING SPINNER */ 
 @keyframes loading {
   from {
     transform: rotate(0turn);
@@ -19,6 +22,7 @@
   }
 }
 
+/* LOADING SPINNER DISAPPEAR */
 @keyframes disappear {
    from {
     opacity: 1;
@@ -29,6 +33,7 @@
    }
 }
 
+/* ICON ROTATE CHECKBOX */
 @keyframes check-rotate {
   from {
     transform: rotate(300deg);
@@ -38,6 +43,7 @@
   }
 }
 
+/* HEART TRANSITION */
 @keyframes full {
   from {
     opacity: 0;
