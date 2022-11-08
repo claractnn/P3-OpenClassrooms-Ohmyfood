@@ -13,9 +13,9 @@
     font-weight: 500;
     cursor: pointer;
     &:hover {
-        background-color: white;
-        transition: 0.5s;
-        box-shadow: 3px 2px 5px #7f7f7f;
+        filter: brightness(100%);
+        transition: 0.3s;
+        box-shadow: 2px 2px 4px #7f7f7f;
         opacity: 0.9;
     }
 }
