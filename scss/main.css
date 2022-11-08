@@ -375,6 +375,7 @@ body {
 }
 .menu__card:hover .menu__card--confirmation {
   margin-right: -1rem;
+  transition-duration: 1s;
 }
 .menu__card:hover .menu__card--icon {
   -webkit-animation: check-rotate 0.7s ease-in forwards;
@@ -409,7 +410,6 @@ body {
   width: 4rem;
   align-items: center;
   justify-content: center;
-  transition-duration: 1s;
 }
 .menu__card--icon {
   height: 1.6rem;
