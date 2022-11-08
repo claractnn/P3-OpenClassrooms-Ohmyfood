@@ -76,11 +76,11 @@
     max-width: 100%;
     &:hover .menu__card--confirmation {
         margin-right: -1rem;
-        transition-duration: 1s;
     }
     &:hover .menu__card--icon {
         animation: check-rotate 0.7s ease-in forwards;
     }
+
     &--description {
         flex: 1;
         width: 150px;
@@ -110,6 +110,7 @@
         width: 4rem;
         align-items: center;
         justify-content: center;
+        transition-duration: 1s;
     }   
     &--icon {
         height: 1.6rem;
