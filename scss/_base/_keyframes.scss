@@ -37,3 +37,12 @@
     transform: rotate(0);
   }
 }
+
+@keyframes full {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
