@@ -8,7 +8,8 @@ Troisième projet du parcours "Développeur web" chez OpenClassrooms. L'objectif
 - Permettre la réservation en ligne et la composition de menus.
 
 # Lien site web
-https://claractnn.github.io/Ohmyfood/
+
+https://claractnn.github.io/P3-OpenClassrooms-Ohmyfood/
 
 # Livrables 
 
